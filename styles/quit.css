@@ -1,0 +1,93 @@
+body {
+    background-color: black;
+    background-image: url("../images/starsBackground2.svg");
+    background-repeat: repeat;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: black;
+    background-color: #2664F3;
+
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color: #555555;
+    padding: 15px 24px;
+    max-width: 300px;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #013DC6;
+    animation: flashingBackground 0.5s infinite;
+}
+
+@keyframes flashing {
+    to {
+        color: black;
+        text-shadow: 5px 1px purple;
+    }
+
+    from {
+        color: yellow;
+        text-shadow: 5px 1px purple;
+    }
+}
+@keyframes flashingBackground {
+    0% {
+        background-color: blue;
+    }
+    20%
+     {
+        background-color: purple;
+    }
+    40%{
+        background-color: red;
+    }
+    60%{
+        background-color: orange;
+    }
+    70%{
+        background-color: yellow;
+    }
+    80%{
+        background-color: green;
+    }
+    100%{
+        background-color: turquoise;
+    }
+}
+/* mobile */
+@media all and (max-width: 768px) {
+    h1{
+        margin-top: 30vh;
+        font-size: 1.5em;
+        background-color: #2664F3;
+    }
+    h3{
+        font-size: 1em;
+    }
+
+}
+/* large screen */
+@media all and (min-width: 768px){
+    h1{
+        margin-top: 40vh;
+        padding: 1%;
+        animation: flashing 0.5s infinite;
+    }
+    h3{
+        text-align: center;
+    }
+}

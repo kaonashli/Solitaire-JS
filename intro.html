@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Deep Space Casino - Sign Up
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/intro.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Deep Space Casino</h1>
+    <h3>Klondike Solitaire</h3>
+    <form action="game.html" id="myForm" method="get" name="myForm">
+        <label class="lbl" for="firstName">First Name: </label>
+        <input type="text" id="firstName" name="firstName" class="txt" placeholder="First name" maxlength="20" /> <br />
+        <span class="firstName-error"></span> <br />
+
+        <label class="lbl" for="lastName">Last Name: </label>
+        <input type="text" id="lastName" name="lastName" class="txt" placeholder="Last name" maxlength="30" /> <br />
+        <span class="lastName-error"></span> <br />
+
+        <label class="lbl" for="username">Username: </label>
+        <input type="text" id="username" name="username" class="txt" placeholder="x123A" maxlength="5" /> <br />
+        <span class="username-error"></span> <br />
+
+        <label class="lbl" for="phoneNumber">Phone Number: </label>
+        <input type="text" id="phoneNumber" name="phoneNumber" class="txt" placeholder="###.###.####" /> <br />
+        <span class="phoneNumber-error"></span> <br />
+
+        <label class="lbl" for="postalCode">Postal Code: </label>
+        <input type="text" id="postalCode" name="postalCode" class="txt" placeholder="A0A 0A0" maxlength="7" /> <br />
+        <span class="postalCode-error"></span> <br />
+
+        <label class="lbl" for="email">Email Address: </label>
+        <input type="text" id="email" name="email" class="txt" placeholder="email@email.com" /> <br />
+        <span class="email-error"></span> <br />
+
+        <label class="lbl" for="amount">Starting amount: </label>
+        <input type="text" id="amount" name="amount" class="txt" placeholder="5" /> <br />
+        <span class="amount-error"></span> <br />
+
+        <input type="submit" id="btnSubmit" value="Play!" /> <br />
+
+    </form>
+    <script src=https://code.jquery.com/jquery-3.4.0.min.js
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.min.js"></script>
+
+    <script src="./js/intro.js"></script>
+</body>
+
+</html>

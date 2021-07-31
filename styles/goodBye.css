@@ -1,0 +1,35 @@
+body {
+    background-color: black;
+    background-image: url("../images/starsBackground2.svg");
+    background-repeat: repeat;
+}
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: black;
+    background-color: #2664F3;
+    margin-top: 40vh;
+    padding: 1%;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: white;
+}
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color: #555555;
+    padding: 15px 24px;
+    max-width: 300px;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #013DC6;
+}

@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+}
+
+canvas {
+  background-image: linear-gradient(black, rgb(2, 1, 78));
+}
+
+a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+a:hover {
+  color: yellow;
+}
+
+@keyframes forTitle {
+  50%{
+    letter-spacing:1.25vw;
+  }
+  75%{
+    /* filter: blur(5px); */
+  }
+  80%{
+    color: transparent
+  }
+  90%{
+    letter-spacing: 1.25vw;
+    color: white;
+  }
+  100%{
+    color: rgba(253, 253, 253, 0.5);
+  }
+}
+
+#title {
+  position: absolute;
+  height: 30px;
+  bottom: 100px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  animation-name: forTitle;
+  animation-duration: 4s;
+  transition: 1s linear;
+}
+#title:hover {
+  color: transparent;
+
+}
+
+@keyframes open {
+  from {
+    color: transparent;
+    background-color: transparent;
+  }
+
+  to {
+    color: white;
+    background-color: black;
+  }
+}
+
+#div1 {
+  color: transparent;
+  font-size: 2em;
+  font-family: 'Roboto Mono', monospace;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+}
+
+#skip1 {
+  float: left;
+  font-size: 2.5em;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  width: 100px;
+  height: 80px;
+  transition: 2s;
+}
+
+#skipImg {
+  width: 50px;
+  height: 100px;
+  transform: rotate(90deg);
+  margin-top: -20px;
+}
+
+#skip2 {
+  float: left;
+  margin-left: 30px;
+  
+  transition: transform 2s;
+}
+
+#skip1:hover+#skip2 {
+  transform: translate(5000px);
+}
+
+footer {
+  vertical-align: center;
+  height: 100px;
+  background-color: black;
+}

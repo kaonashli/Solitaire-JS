@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    background-image: url("../images/starsBackground2.svg");
+    background-repeat: repeat;
+}
+
+
+
+@keyframes flashingBackground {
+    0% {
+        background-color: blue;
+    }
+
+    20% {
+        background-color: purple;
+    }
+
+    40% {
+        background-color: red;
+    }
+
+    60% {
+        background-color: orange;
+    }
+
+    70% {
+        background-color: yellow;
+    }
+
+    80% {
+        background-color: green;
+    }
+
+    100% {
+        background-color: turquoise;
+    }
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color: #555555;
+    padding: 15px 24px;
+    max-width: 300px;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #013DC6;
+    animation: flashingBackground 0.5s infinite;
+}
+
+/* mobile */
+@media all and (max-width: 768px) {
+    #myCanvas {
+        margin-top: 20vh;
+    }
+    button{
+        animation: flashingBackground 0.5s infinite;
+    }
+
+}
+
+@media all and (min-width: 768px) {
+    #myCanvas {
+        margin-top: 40vh;
+    }
+}

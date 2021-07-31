@@ -1,0 +1,381 @@
+body {
+    background-color: black;
+    background-image: url("../images/starsBackground2.svg");
+    background-repeat: repeat;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #013DC6;
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #2664F3;
+}
+
+footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 75%;
+    font-family: 'Cantarell', sans-serif;
+}
+
+td label {
+    color: white;
+    float: right;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* slider bet ---------------------------------*/
+#enterBet {
+    margin-top: 20vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#sliderTitle {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+#betSlider {
+    margin: 10px;
+}
+
+#errorBet {
+    color: red;
+    font-family: 'Roboto Mono', monospace;
+    margin: auto;
+}
+
+/*----------------------------------------------*/
+.betClass {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.moneyTable {
+    display: flex;
+    flex-direction: row-reverse;
+    position: absolute;
+}
+
+
+.nav {
+
+    display: none;
+    align-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.151);
+    flex-wrap: nowrap;
+}
+
+button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75em;
+    padding: 5px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #013DC6;
+}
+
+#displayPlayer {
+    color: white;
+    bottom: 0;
+}
+
+#changePlayer {
+    color: #013DC6;
+}
+
+
+
+#empty {
+    max-height: 2%;
+}
+
+#rocketDiv {
+    position: absolute;
+}
+
+img #rocket {
+    width: 600px;
+    display: block;
+}
+
+#changePlayer {
+    text-decoration: underline;
+}
+
+#enterBet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+}
+
+#bet {
+    font-family: 'Press Start 2P', cursive;
+    max-width: 250px;
+    border: none;
+    padding: 5px;
+    height: 25px;
+    margin-top: 20vh;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+#start {
+    align-self: center;
+}
+
+#displayPlayer {
+    font-family: 'Roboto Mono', monospace;
+    position: fixed;
+    
+}
+
+input[type=text]:focus {
+    color: white;
+    background-color: rgba(0, 26, 255, 0.425);
+}
+
+input[type=button] {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.75em;
+    padding: 5px;
+    background-color: #555555;
+    border: none;
+    color: white;
+    width: 150px;
+
+}
+
+input[type=button]:hover {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+img {
+    max-width: 70px;
+    display: block;
+}
+
+/* tableau */
+
+/* row one */
+
+.rowOne {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rowOneColOneGrid {
+    grid-column: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+}
+
+.drawPile {
+    grid-column: 1fr;
+    align-self: center;
+}
+
+.stockPile {
+    grid-column: 3fr;
+    align-self: center;
+    margin-left: 20%;
+    /* align-items: center; */
+}
+
+.threeCards img {
+    /* display: flex */
+    /* padding-right: 20%; */
+
+    margin-left: -20%;
+    /* align-items: center; */
+    /* align-self: flex-end; */
+}
+
+.threeCards {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.rowOneColTwoGrid {
+    grid-column: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.heartsPile {
+    grid-column: 1 / span 1;
+}
+
+.clubsPile {
+    grid-column: 2 / span 1;
+}
+
+.diamondsPile {
+    grid-column: 3 / span 1;
+}
+
+.spadesPile {
+    grid-column: 4 / span 1;
+}
+
+.tableau {
+    display: none;
+    background-color: rgba(38, 99, 243, 0.445);
+    min-height: 600px;
+    padding: 5px;
+}
+
+.tableauFlexContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.tableauColumn {
+    padding: 5px;
+    align-items: flex-start;
+
+}
+
+.tableauCard {
+    margin-top: -75%;
+}
+
+/* mobile */
+@media all and (max-width: 375px) {
+    h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 0.75em;
+    }
+
+    .moneyTable {
+        position: relative;
+    }
+
+    img {
+        max-width: 45px;
+    }
+
+    .tableauColumn {
+        padding: 2px;
+
+    }
+
+    .tableau {
+        background-color: rgba(38, 99, 243, 0.445);
+        min-height: 600px;
+    }
+
+    #empty {
+        max-height: 2%;
+    }
+
+    .moneyTable {
+        font-size: 12px;
+    }
+
+    .rowOne {
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+
+    .rowOneColOneGrid {
+        grid-column: 2fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .drawPile {
+        grid-column: 1fr;
+        align-self: center;
+    }
+
+    .stockPile {
+        grid-column: 1fr;
+        align-self: center;
+        margin-left: 50%;
+        max-width: 50px;
+        /* align-items: center; */
+    }
+    .threeCards img{
+        margin-left: -80%;
+    }
+    #displayPlayer{
+        display: none;
+    }
+
+}
+
+/* medium mobile */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+    .moneyTable {
+        position: relative;
+    }
+
+    img {
+        max-width: 45px;
+    }
+
+    .rowOne {
+        margin-bottom: 60px;
+
+    }
+
+    .threeCards {
+        padding-right: -100%;
+    }
+    #displayPlayer{
+        display: none;
+    }
+}
+
+/* large */
+@media only screen and (min-width: 768px) {
+    .rowOne {
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 100px;
+        width: 50%;
+    }
+    .stockPile{
+        width: 200px;
+    }
+
+    @media only screen and (max-width: 870px) {
+        .rowOne {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 100px;
+            width: 75%;
+        }
+
+        @media only screen and (max-width: 1048px) {
+            .moneyTable {
+                position: relative;
+            }
+        }
+    }
+}

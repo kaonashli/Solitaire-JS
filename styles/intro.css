@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+    background-image: url("../images/starsBackground2.svg");
+    background-repeat: repeat;
+}
+
+@keyframes flashing {
+    to {
+        color: dodgerblue;
+        text-shadow: 5px 5px purple;
+    }
+
+    from {
+        color: #013DC6;
+        text-shadow: 5px 5px purple;
+    }
+}
+
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 0.5em;
+    color: #013DC6;
+    
+}
+
+h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    text-align: center;
+    color: #2664F3;
+   }
+
+#btnSubmit {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    border: none;
+    background-color: #555555;
+    padding: 10px 24px;
+    max-width: 200px;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    animation: flashingButton 0.5s infinite;
+}
+
+#btnSubmit:hover {
+    background-color: #013DC6;
+}
+
+.lbl {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    flex-grow: 1;
+    text-align: right;
+    align-self: center;
+}
+
+.txt {
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    padding: 8px;
+    flex-grow: 1;
+}
+
+input[type=text]:focus {
+    /* max-width: 600px; */
+    color: white;
+    background-color: rgba(0, 26, 255, 0.425);
+}
+
+@media all and (min-width: 768px) {
+   h1{
+    animation: flashing 0.5s infinite;
+   }
+    #myForm {
+        align-self: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .lbl {
+        display: inline-block;
+        width: 50%;
+    }
+
+    label.error {
+        color: red;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 15px;
+        text-align: center;
+        display: inline-block;
+
+    }
+
+    .txt {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    #username {
+        width: 100px;
+    }
+
+    #postalCode {
+        width: 100px;
+    }
+
+    #amount {
+        width: 75px;
+    }
+
+    @media only screen and (max-width: 855px) {
+        #myForm {
+            align-self: center;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    }
+}
+
+@media all and (max-width: 768px) {
+    #myForm {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-around;
+    }
+
+    label.error {
+        color: red;
+        font-family: 'Roboto Mono', monospace;
+        font-size: 12px;
+        display: inline-block;
+        max-width: 300px;
+
+    }
+
+    input {
+        display: inline-block;
+        height: 30px;
+    }
+
+    label {
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+}

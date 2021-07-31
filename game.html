@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>
+        Deep Space Casino - Klondike Solitaire
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+
+<body>
+
+    <h2>Deep Space Casino</h2>
+    <h3>Klondike Solitaire</h3>
+    <div id="rocketDiv"></div>
+    <div class="nav">
+        <input type="button" id="cheat" value="Cheat" />
+        <input type="button" id="quit" value="Quit" />
+    </div>
+
+    <div id="enterBet">
+        <div id="sliderTitle" class="ui-widget ui-slider-handle ui-widget ui-widget-header ui-corner-all">Please enter a
+            bet ($52 increment):
+            <span id="betAmount">$0</span>
+        </div>
+        <div id="betSlider"></div>
+        <button id="start">Start</button></br>
+        <span id="errorBet"></span>
+    </div>
+
+    <div class="tableau">
+        <table class="moneyTable">
+            <tr>
+                <td><label for="qBet">Bet: $</label></td>
+                <td class="betClass" id="qBet"> -- </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="qTotalWin">Total Amount Won: $</label></td>
+                <td class="betClass" id="qTotalWin"> -- </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="qAmount">Bank Roll: $</label>
+                </td>
+                <td class="betClass" id="qAmount"> </td>
+            </tr>
+        </table>
+
+        <div class="rowOne">
+            <div class="rowOneColOneGrid">
+                <div class="drawPile" id="col7"></div>
+                <div class="stockPile"><span id="col8" class="threeCards"></span></div>
+            </div>
+            <div class="rowOneColTwoGrid">
+                <div class="heartsPile" id="col9"> <img
+                            src="images/cards/Foundation_Hearts.svg" alt="card" id="col9" class="tableauColumn"/> </span></div>
+                <div class="clubsPile" id="col10"> <img
+                            src="images/cards/Foundation_Clubs.svg" alt="card" id="col10" class="tableauColumn"/> </span> </div>
+                <div class="diamondsPile" id="col11"> <img
+                            src="images/cards/Foundation_Diamonds.svg" alt="card" id="col11" class="tableauColumn"/> </span> </div>
+                <div class="spadesPile" id="col12"> <img
+                            src="images/cards/Foundation_Spades.svg" alt="card" id="col12" class="tableauColumn"/> </span> </div>
+            </div>
+        </div>
+
+        <div class="tableauFlexContainer">
+            <div class="tableauColumn" id="col0"> </div>
+            <div class="tableauColumn" id="col1"> </div>
+            <div class="tableauColumn" id="col2"> </div>
+            <div class="tableauColumn" id="col3"> </div>
+            <div class="tableauColumn" id="col4"> </div>
+            <div class="tableauColumn" id="col5"> </div>
+            <div class="tableauColumn" id="col6"> </div>
+        </div>
+    </div>
+
+
+
+
+    <table id="displayPlayer">
+        <tr id="welcome"></tr>
+        <tr id="info"></tr>
+        <tr id="bank"></tr>
+        <tr id="lv"></tr>
+        <tr id="signOut"></tr>
+    </table>
+
+    <script src="js/external/jquery/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
